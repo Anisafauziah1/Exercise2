@@ -56,3 +56,23 @@ namespace Exercise2
             if (low >= high)
                 return;
             int mid = (low + high) / 2;
+
+            //Partition the list into two parts:
+            //one containing elements less that or equal to pivot
+            //Outher containing elements greather than pivot
+
+            i = low;
+            AF = mid + 1;
+            k = low;
+
+            pivot = anisa[low];
+
+            while (i <= AF)
+            {
+                //Search for an element greather than pivot
+                while ((anisa[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
