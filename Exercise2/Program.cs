@@ -84,3 +84,12 @@ namespace Exercise2
                     cmp_count++;
                 }
                 cmp_count++;
+
+                if (i < AF) //if the greater element is on the left of the element
+                {
+                    //swap the element at index i whit the element at index j
+                    swap(i, AF);
+                    mov_count++;
+                }
+            }
+            //j now contains the index of thelast element in the sorted list
