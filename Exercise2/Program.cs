@@ -92,4 +92,34 @@ namespace Exercise2
                     mov_count++;
                 }
             }
-            //j now contains the index of thelast element in the sorted list
+            //AF now contains the index of thelast element in the sorted list
+
+            if (low < AF)
+            {
+                //Move the pivot to its correct position in the list
+                swap(low, AF);
+                mov_count++;
+            }
+            //sort the list on the left of pivot using quick sort
+            q_sort(low, AF - 1);
+
+            //sort the list on the right of pivot using quick sort
+            q_sort(AF + 1, high);
+        }
+        void display()
+        {
+            Console.WriteLine("\n---------------------");
+            Console.WriteLine("Sorted Array elements");
+            Console.WriteLine("\n---------------------");
+
+            for (int AF = 0; AF < n; AF++)
+            {
+                Console.WriteLine(anisa[AF]);
+            }
+            Console.WriteLine("\nNumber of comparisons: ", cmp_count);
+            Console.WriteLine("\nNumber of data movemenets: " + mov_count);
+        }
+        int getSize()
+        {
+            return (n);
+        }
