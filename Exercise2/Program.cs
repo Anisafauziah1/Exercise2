@@ -50,4 +50,9 @@ namespace Exercise2
             anisa[x] = anisa[y];
             anisa[y] = temp;
         }
-
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, AF, k;
+            if (low >= high)
+                return;
+            int mid = (low + high) / 2;
