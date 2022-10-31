@@ -41,6 +41,13 @@ namespace Exercise2
                 anisa[i] = Int32.Parse(s1);
             }
         }
-        
+        //swaps the elements at index x with the element at index y
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = anisa[x];
+            anisa[x] = anisa[y];
+            anisa[y] = temp;
         }
 
