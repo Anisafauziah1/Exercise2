@@ -9,6 +9,7 @@ namespace Exercise2
         class Program
         {
 
+
         //Array to be searched
         int[] anisa = new int[61];
         //Number of elements in the array
