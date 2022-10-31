@@ -123,3 +123,20 @@ namespace Exercise2
         {
             return (n);
         }
+        static void Main(string[] args)
+        {
+            //Declaring the object of the class
+            Program myList = new Program();
+            //Acept array elements
+            myList.read();
+            //Calling the sorting function
+            //Frist call to Quick sort Alogarithm
+            myList.q_sort(0, myList.getSize() - 1);
+            //Display sorted array
+            myList.display();
+            // to exit from the console
+            Console.WriteLine("\n\nPress Enter to exit. ");
+            Console.Read();
+        }
+    }
+}
