@@ -76,3 +76,11 @@ namespace Exercise2
                     cmp_count++;
                 }
                 cmp_count++;
+
+                //Search for an element less than or equal to pivot
+                while ((anisa[AF] > pivot) && (AF >= low))
+                {
+                    AF--;
+                    cmp_count++;
+                }
+                cmp_count++;
